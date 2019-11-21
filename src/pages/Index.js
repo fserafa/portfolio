@@ -11,9 +11,9 @@ class Index extends Component {
         return (
             <>
                 <Header />
-                <About />
-                <Services />
-                <Portfolio />
+                {/* <About /> */}
+                {/* <Services /> */}
+                {/* <Portfolio /> */}
                 <Contact />
                 <Footer />
             </>

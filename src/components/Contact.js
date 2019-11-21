@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Container, Form, Button, Row, Col, Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 class Contact extends Component {
     render() {
         return (
-            <section style={{ height: '100vh' }}>
-                <Container className="d-flex flex-column justify-content-center h-100">
-
+            <section id="contact" style={{ height: '100vh', backgroundColor: '#4754d2' }} >
+                <Container className="d-flex flex-column justify-content-around h-100">
+                    <h1 className="font-weight-bolder display-1 text-light text-center">Contato</h1>
                     <Row>
-                        <Col>
-                            <h1>Contato</h1>
-                            <p>Lorem ipsum dolor sit amet</p>
+                        <Col className="text-light">
+                            <h3 className="text-center">Envie uma mensagem!</h3>
                             <Form>
                                 <Form.Group>
                                     <Form.Label>Nome</Form.Label>
@@ -24,30 +25,30 @@ class Contact extends Component {
                                     <Form.Label>Telefone</Form.Label>
                                     <Form.Control type="tel" />
                                 </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Mensagem</Form.Label>
+                                    <Form.Control as="textarea" rows="3" />
+                                </Form.Group>
 
                                 <Button variant="primary" type="submit">
                                     Enviar
                                 </Button>
                             </Form>
                         </Col>
-                        <Col className="d-flex flex-column align-items-center justify-content-around">
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Body>
-                                    <Card.Title>Email</Card.Title>
-                                    <Card.Text>
-                                        Lorem ipsum dolor sit amet
-                                    </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
-                                </Card.Body>
-                            </Card>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Body>
+                        <Col xs={1} className="d-flex flex-column align-items-center justify-content-around">
+                            <h1 className="text-center text-light">Ou</h1>
+                        </Col>
+                        <Col className="d-flex flex-column align-items-center justify-content-center">
+                            <Card bg="light" style={{ width: '100%' }} className="p-3 rounded d-flex flex-row align-items-center">
+                                <Card.Body className="p-0">
                                     <Card.Title>Whatsapp</Card.Title>
                                     <Card.Text>
-                                        Lorem ipsum dolor sit amet
+                                        (27) 99864-5147
                                     </Card.Text>
-                                    <Button variant="primary">Go somewhere</Button>
+
                                 </Card.Body>
+                                <FontAwesomeIcon icon={faArrowRight} size="2x" />
+
                             </Card>
                         </Col>
                     </Row>

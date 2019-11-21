@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 class About extends Component {
     render() {
         return (
-            <section style={{ height: '100vh' }} className="bg-secondary">
+            <section id="about" style={{ height: '100vh' }} >
                 <Container className="d-flex flex-column justify-content-center align-items-center h-100">
 
                     <h1>About</h1>

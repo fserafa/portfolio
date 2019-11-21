@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, Container } from 'react-bootstrap'
+import { Card, Button, Container, Row, Col } from 'react-bootstrap'
 
 class Services extends Component {
     state = {
@@ -8,12 +8,16 @@ class Services extends Component {
 
     componentDidMount() {
         const services = [{
-            title: 'Dev Web',
-            description: 'Lorem Ipsum'
+            title: 'Sites institucionais',
         },
         {
-            title: 'Dev Mobile',
-            description: 'Lorem Ipsum'
+            title: 'Sites empresariais',
+        },
+        {
+            title: 'Hotsites',
+        },  
+        {
+            title: 'Landing pages',
         }];
 
         this.setState({ services: services });
@@ -23,19 +27,24 @@ class Services extends Component {
         const { services } = this.state;
 
         return (
-            <section style={{ height: '100vh' }}>
-                <Container className="d-flex flex-row justify-content-around align-items-center h-100">
-                    {services.map((service, index) => (
-                        <Card key={index.toString()} style={{ width: '18rem' }}>
-                            <Card.Body>
-                                <Card.Title>{service.title}</Card.Title>
-                                <Card.Text>
-                                    {service.description}
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    ))}
+            <section id="services" style={{ height: '80vh', backgroundColor: '#f4f4f4' }}>
+                <Container className="d-flex flex-column justify-content-around align-items-center h-100">
+ 
+                    <h1 className="font-weight-bolder display-1" style={{ color: '#2834a5' }}>Serviços</h1>
+                    <div className="w-100 d-flex justify-content-around">
+                         
+                        <Row>
+                            {services.map((service, index) => (
+                               
+                                    <Card key={index.toString()} style={{ width: '20%' }} className="shadow rounded p-3">
+                                        <Card.Body>
+                                            <Card.Title>{service.title}</Card.Title>
+                                        </Card.Body>
+                                    </Card> 
+                               
+                            ))}
+                        </Row>
+                    </div>
                 </Container>
             </section>
         );

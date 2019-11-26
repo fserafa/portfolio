@@ -1,15 +1,15 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 
 import Index from './pages/Index';
 
 const Routes = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route exact path="/" component={Index} />
             </Switch>
-        </BrowserRouter>)
+        </HashRouter>)
 }
 
 export default Routes;

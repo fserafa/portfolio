@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Spinner, Alert } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faExclamationCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Axios from 'axios'
 
 export default function Contact() {
@@ -124,6 +125,7 @@ export default function Contact() {
                                 {loading ? (<Spinner className="mr-1" size="sm" animation="border" role="status">
                                     <span className="sr-only">Loading...</span>
                                 </Spinner>) : null}
+
                                 Enviar
                                 </Button>
                         </Form>
@@ -138,15 +140,18 @@ export default function Contact() {
                             onClick={handleClick}
                             variant="light"
                             style={{ width: '100%' }}
-                            className="p-3 rounded d-flex flex-row align-items-center justify-content-between">
+                            className="text-left p-3 rounded d-flex flex-row align-items-center justify-content-between">
+                            <div className="d-flex align-items-center flex-row">
+                                <FontAwesomeIcon icon={faWhatsapp} size="3x" className="mr-3" />
 
-                            <div className="d-flex align-items-start flex-column">
-                                <h5 className="card-title">
-                                    Whatsapp
-                                    </h5>
-                                <p className="card-text">
-                                    (27) 99864-5147
-                                    </p>
+                                <div>
+                                    <h5 className="card-title">
+                                        Whatsapp
+                                        </h5>
+                                    <p className="card-text">
+                                        (27) 99864-5147
+                                        </p>
+                                </div>
                             </div>
 
                             <FontAwesomeIcon icon={faArrowRight} size="2x" />

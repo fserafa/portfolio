@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap'
+import { Card, Container, Row } from 'react-bootstrap'
 
 class Services extends Component {
     state = {
@@ -13,7 +13,7 @@ class Services extends Component {
         {
             title: 'Sites empresariais',
         },
-        {
+        { 
             title: 'Hotsites',
         },  
         {

@@ -12,9 +12,9 @@ class Header extends Component {
                         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                             <Nav className="text-light">
                                 <Nav.Link className="text-light" href="#header">Home</Nav.Link>
-                                <Nav.Link className="text-light" href="#about">Sobre</Nav.Link>
+                                {/* <Nav.Link className="text-light" href="#about">Sobre</Nav.Link>
                                 <Nav.Link className="text-light" href="#services">Serviços</Nav.Link>
-                                <Nav.Link className="text-light" href="#portfolio">Portfólio</Nav.Link>
+                                <Nav.Link className="text-light" href="#portfolio">Portfólio</Nav.Link> */}
                                 <Nav.Link className="text-light" href="#contact">Contato</Nav.Link>
                             </Nav>
 
@@ -28,12 +28,12 @@ class Header extends Component {
                     <h2 className="text-light font-weight-bolder text-center p-3">
                         Sou desenvolvedor web e posso te ajudar, entre em contato.
                     </h2>
-                    <Button variant="outline-light" size="lg">Vamos Conversar!</Button>
+                    <Button variant="outline-light" size="lg" onClick={() => window.location.href='#contact'}>Vamos Conversar!</Button>
 
                 </Container>
             </header>
         );
     }
-}
+} 
 
 export default Header;

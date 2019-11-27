@@ -50,7 +50,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" style={{ height: '90vh', backgroundColor: '#4754d2' }}>
+        <section id="contact" style={{ minHeight: '100vh', backgroundColor: '#4754d2' }}>
 
             {showError ?
                 <div className="d-flex justify-content-center">
@@ -77,9 +77,9 @@ export default function Contact() {
                     </div>
                     : null}
 
-            <Container className="d-flex flex-column justify-content-around h-100">
-                <h1 className="font-weight-bolder display-1 text-light text-center">Contato</h1>
-                <Row>
+            <Container className="d-flex flex-column justify-content-around" style={{minHeight: '100vh'}}>
+                <h1 className="font-weight-bolder display-3 text-light text-center">Contato</h1>
+                <Row className="mb-3">
                     <Col className="text-light">
                         <h3 className="text-center">Envie uma mensagem!</h3>
                         <Form onSubmit={handleSubmit}>
@@ -130,7 +130,7 @@ export default function Contact() {
                                 </Button>
                         </Form>
                     </Col>
-                    <Col xs={1} className="d-flex flex-column align-items-center justify-content-around">
+                    <Col xs={12} xl={1} className="d-flex flex-column align-items-center justify-content-around">
                         <h1 className="text-center text-light">Ou</h1>
                     </Col>
                     <Col className="d-flex flex-column align-items-center justify-content-center">

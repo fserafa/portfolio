@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 
-class Portfolio extends Component {
-    render() {
-        return (
-            <section id="portfolio" style={{ height: '100vh', backgroundColor: '#c1c1c1' }}>
-                <Container className="d-flex flex-column justify-content-center h-100">
-                    section
+export default function Portfolio() {
+    return (
+        <section id="portfolio" style={{ height: '100vh', backgroundColor: '#c1c1c1' }}>
+            <Container className="d-flex flex-column justify-content-center h-100">
+                section
                 </Container>
-            </section >
-        );
-    }
+        </section>
+    );
 }
 
-export default Portfolio;

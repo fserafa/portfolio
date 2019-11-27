@@ -1,15 +1,16 @@
 import React from 'react';
-import { Switch, Route, HashRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Index from './pages/Index';
 
 const Routes = () => {
     return (
-        <HashRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={Index} />
             </Switch>
-        </HashRouter>)
+        </BrowserRouter>
+    ) 
 }
 
-export default Routes;
+export default Routes; 

@@ -6,19 +6,15 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Services from '../components/Services';
 
-class Index extends Component {
-    render() {
-        return (
-            <>
-                <Header />
-                {/* <About /> */}
-                {/* <Services /> */}
-                {/* <Portfolio /> */}
-                <Contact />
-                <Footer />
-            </>
-        );
-    }
+export default function Index() {
+    return (
+        <>
+            <Header />
+            {/* <About /> */}
+            <Services />
+            {/* <Portfolio /> */}
+            <Contact />
+            <Footer />
+        </>
+    );
 }
-
-export default Index; 

@@ -50,7 +50,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" style={{ minHeight: '100vh', backgroundColor: '#4754d2' }}>
+        <section id="contact" className="mh-100vh" style={{ backgroundColor: '#4754d2' }}>
 
             {showError ?
                 <div className="d-flex justify-content-center">
@@ -77,8 +77,12 @@ export default function Contact() {
                     </div>
                     : null}
 
-            <Container className="d-flex flex-column justify-content-around" style={{minHeight: '100vh'}}>
-                <h1 className="font-weight-bolder display-3 text-light text-center">Contato</h1>
+            <Container className="d-flex flex-column justify-content-around mh-100vh">
+
+                <div className="d-flex flex-column align-items-center">
+                    <h1 className="font-weight-bolder display-3 text-light">Contato</h1>
+                    <div className="rounded" style={{ border: '1px solid #fff', width: '50px' }}></div>
+                </div>
                 <Row className="mb-3">
                     <Col className="text-light">
                         <h3 className="text-center">Envie uma mensagem!</h3>
@@ -136,11 +140,10 @@ export default function Contact() {
                     <Col className="d-flex flex-column align-items-center justify-content-center">
 
                         <Button
-
                             onClick={handleClick}
                             variant="light"
                             style={{ width: '100%' }}
-                            className="text-left p-3 rounded d-flex flex-row align-items-center justify-content-between">
+                            className="bt-whatsapp text-left p-3 rounded d-flex flex-row align-items-center justify-content-between">
                             <div className="d-flex align-items-center flex-row">
                                 <FontAwesomeIcon icon={faWhatsapp} size="3x" className="mr-3" />
 

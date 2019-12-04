@@ -19,13 +19,53 @@
     color: #4285F4;
 }
 
-.services .media {
+.services-boxes .media {
     webkit-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 } 
 
-.services .media:hover {
+.services-boxes .media:hover {
     background: #ffffff;
-    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.mh-100vh {
+ min-height: 100vh;
+}
+
+.bt-whatsapp {
+    webkit-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.bt-whatsapp:hover {
+    background-color: #e7e6e6;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.5);
+} 
+
+.custom-sticky {
+    /* background-color: rgba(71, 84, 210, 1); */
+    background-color: #fff;
+    webkit-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-transparent {
+    webkit-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: transparent !important;
+    padding-top: 25px;
+    box-shadow: none;
+}
+
+.navbar-transparent .navbar-brand {
+    color: #fff;
+}
+
+.custom-sticky .navbar-brand, .custom-sticky .nav-link {
+   color: #2834a5 !important;
 }

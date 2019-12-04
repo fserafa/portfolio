@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode } from '@fortawesome/free-solid-svg-icons';
-import placeholder from '../assets/placeholder.jpg'
+import { faHtml5, faCss3, faJs, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons'
 
 export default function Services() {
     const [services, setServices] = useState([]);
@@ -37,7 +37,13 @@ export default function Services() {
                         <Col lg={4} md={6} key={index.toString()}>
                             <div className="media flex-column p-4 bg-light my-3 text-center" style={{ borderBottom: '3px solid #2834a5' }}>
                                 <div className="media-icon m-auto">
-                                    <FontAwesomeIcon icon={faFileCode} size="4x" color="#4754d2" />
+                                    <div style={{ color: '#2834a5' }}>
+                                        <FontAwesomeIcon icon={faHtml5} size="2x" className="m-2" />
+                                        <FontAwesomeIcon icon={faCss3} size="2x" className="m-2" />
+                                        <FontAwesomeIcon icon={faJs} size="2x" className="m-2" />
+                                        <FontAwesomeIcon icon={faReact} size="2x" className="m-2" />
+                                        <FontAwesomeIcon icon={faWordpress} size="2x" className="m-2" />
+                                    </div>
 
                                 </div>
                                 <div className="media-body mt-4">

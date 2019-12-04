@@ -15,7 +15,7 @@ export default function Index() {
                 <Header />
         </header>
             <main>
-                <About />
+                {/* <About /> */}
                 <Services />
                 {/* <Portfolio /> */}
                 <Contact />

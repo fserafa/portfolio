@@ -47,7 +47,6 @@ export default function IndexNavbar() {
                         {/* <Nav.Link className="text-light" href="#portfolio">Portfólio</Nav.Link> */}
                         <Nav.Link className="text-light" href="#contact">Contato</Nav.Link>
                     </Nav>
-
                 </Navbar.Collapse>
             </Container>
         </Navbar>

@@ -2,9 +2,10 @@ import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import headerBg from '../assets/headerbg.jpg';
 
+
 export default function Header() {
     return (
-        <header id="header" className="mh-100vh" style={{ background: `url(${headerBg}) center no-repeat`, backgroundSize: 'cover' }}>
+        <header id="home" className="mh-100vh" style={{ background: `url(${headerBg}) center no-repeat`, backgroundSize: 'cover' }}>
             {/* <Navbar expand="lg" fixed="top" className="custom-sticky">
                 <Container className="font-weight-bold">
                     <Navbar.Brand href="#header" className="text-light">Felipe Serafim</Navbar.Brand>

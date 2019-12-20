@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileCode } from '@fortawesome/free-solid-svg-icons';
+import { faFileCode, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3, faJs, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons'
 
 export default function Services() {
@@ -33,9 +33,13 @@ export default function Services() {
                 </div>
 
                 <Row className="services-boxes">
+                    <Col>
+                        <FontAwesomeIcon icon={faDesktop} style={{ fontSize: 450 }} />
+                    </Col>
+                    <Col lg={4} md={6} className="d-flex">
                     {services.map((service, index) => (
-                        <Col lg={4} md={6} key={index.toString()}>
-                            <div className="media flex-column p-4 bg-light my-3 text-center" style={{ borderBottom: '3px solid #2834a5' }}>
+                       
+                            <div key={index.toString()} className="media flex-column p-4 bg-light my-3 text-center" style={{ borderBottom: '3px solid #2834a5' }}>
                                 <div className="media-icon m-auto">
                                     <div style={{ color: '#2834a5' }}>
                                         <FontAwesomeIcon icon={faHtml5} size="2x" className="m-2" />
@@ -52,9 +56,10 @@ export default function Services() {
                                             sed diam nonummy nibh euismod tincidunt ut.</p>
                                 </div>
                             </div>
-                        </Col>
+                        
 
                     ))}
+                    </Col>
 
                 </Row>
             </Container>

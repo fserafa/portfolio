@@ -10,7 +10,7 @@ const Routes = () => {
                 <Route exact path="/" component={Index} />
             </Switch>
         </BrowserRouter>
-    ) 
+    )  
 }
 
 export default Routes; 
